@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giyas Yakubovich Umarov — Family Memorial</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+    @page {
+      size: A4;
+      margin: 2cm 2.5cm;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.75;
+      color: #1a1a2e;
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      line-height: 1.3;
+      color: #1a1a2e;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #6a6a8a;
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .dates {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #999;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #c9792e;
+    }
+
+    h2 {
+      font-size: 1.375rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      color: #c9792e;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.375rem;
+    }
+
+    h3 {
+      font-size: 1.0625rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-size: 0.9375rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 0.9375rem;
+    }
+
+    blockquote {
+      border-left: 3px solid #c9792e;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      background: #fdf6ee;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .stat-box {
+      padding: 1rem;
+      background: #f8f7f4;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #c9792e;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.875rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.625rem 0.75rem;
+      background: #f8f7f4;
+      border-bottom: 2px solid #c9792e;
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #c9792e;
+    }
+
+    td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #eee;
+      color: #444;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #c9792e, transparent);
+      margin: 2.5rem 0;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      color: #999;
+      font-size: 0.8125rem;
+    }
+
+    @media print {
+      body { padding: 0; max-width: 100%; }
+      .stat-grid { page-break-inside: avoid; }
+      h2 { page-break-after: avoid; }
+      .no-print { display: none; }
+    }
+
+    .print-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #c9792e;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(201, 121, 46, 0.3);
+    }
+
+    .print-btn:hover { background: #b06820; }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">Print / Save PDF</button>
+
+<h1>Academician Giyas Yakubovich Umarov</h1>
+<div class="subtitle">From the Heart of the Atom to the Power of the Sun</div>
+<div class="dates">1921 &mdash; 1988 &nbsp;&bull;&nbsp; Uzbekistan</div>
+
+<div class="stat-grid">
+  <div class="stat-box">
+    <span class="stat-number">250+</span>
+    <span class="stat-label">Scientific Articles</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number">54</span>
+    <span class="stat-label">Dissertations Supervised</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number">31</span>
+    <span class="stat-label">Patents Awarded</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number">4</span>
+    <span class="stat-label">Monographs Published</span>
+  </div>
+</div>
+
+<p>Giyas Yakubovich Umarov was a prominent Soviet and Uzbekistani scientist who achieved world-class contributions across three distinct scientific domains over a five-decade career. He was Uzbekistan's first nuclear physicist, the founder of heliotechnology (applied solar energy) in Central Asia, and a pioneer of agricultural biophysics. His work was recognized internationally by institutions including the U.S. Department of Energy's Lawrence Berkeley National Laboratory.</p>
+
+<h2>I. Biographical Overview</h2>
+
+<p>Born in 1921 in what would become the Uzbek SSR, Umarov rose to become one of the most consequential applied physicists of Soviet Central Asia. He was the first candidate of sciences in nuclear physics from Uzbekistan and eventually held the rank of Academician&mdash;the highest scientific distinction in the Soviet system.</p>
+
+<p>Key institutional roles:</p>
+<ul>
+  <li>Researcher and group leader at the Joint Institute for Nuclear Research (JINR), Dubna</li>
+  <li>Organizer of the Tashkent Plasma Physics Laboratory (under Igor Kurchatov's direction)</li>
+  <li>Founder and Deputy Chief Editor of <em>Heliotechnika</em> (internationally: <em>Applied Solar Energy</em>)</li>
+  <li>Primary champion of the Large Solar Furnace near Tashkent (completed 1987)</li>
+  <li>Vocal member of the Committee for the Restoration of the Aral Sea</li>
+</ul>
+
+<h2>II. Nuclear &amp; Plasma Physics (1940s&ndash;1960s)</h2>
+
+<h3>The Landau Debate on Neutrino Mass (1949)</h3>
+<p>In 1949, Umarov defended his dissertation at Moscow State University, where his examiner was Lev Landau, the future Nobel laureate. The prevailing view at the time placed neutrino mass at 0.3&ndash;0.8 electron masses. Umarov argued it was no more than 1/50 to 1/100 of the electron mass. History proved him correct. His 1949 work was later cited alongside 13 Nobel laureates in Ya.B. Zeldovich and M.Yu. Khlopov's landmark 1981 paper on the cosmological implications of neutrino mass.</p>
+
+<h3>Beta-Spectroscopy at JINR Dubna (1957)</h3>
+<p>At the Joint Institute for Nuclear Research in Dubna, Umarov organized a research group that developed a beta-spectrograph on permanent magnets. This work culminated in the 1970 monograph <em>Beta-Spectrographs with Permanent Magnets</em> (with A.A. Abdurazzakov and G.M. Gromov).</p>
+
+<h3>Plasma Laboratory in Tashkent</h3>
+<p>Under Kurchatov's direction, Umarov established a plasma physics laboratory in Tashkent, receiving specialized equipment via railway wagons from Moscow. His final scientific work before his death focused on maintaining stable plasma equilibrium in a tokamak&mdash;the same problem central to fusion energy today.</p>
+
+<h2>III. Heliotechnology &amp; Solar Power (1954&ndash;1988)</h2>
+
+<h3>Tower-Type Solar Plant Concept (1954)</h3>
+<p>As early as 1954, Umarov proposed a tower-type solar power plant with a heliostat field&mdash;the design concept that became the basis of modern Concentrated Solar Power (CSP). This predated the modern CSP industry by decades.</p>
+
+<h3>Founding Heliotechnika Journal (1963)</h3>
+<p>Umarov founded <em>Heliotechnika</em>, published internationally as <em>Applied Solar Energy</em> by Allerton Press (later Springer). This journal became the premier Soviet publication on solar energy and continues in publication today. Its creation anchored over 300 researchers in Uzbekistan and established solar energy as a recognized scientific discipline within the Soviet Academy of Sciences.</p>
+
+<h3>The Large Solar Furnace (1987)</h3>
+<p>Umarov was the driving force behind the Large Solar Furnace near Tashkent&mdash;a high-concentration solar research facility used for materials testing at temperatures exceeding 3,000&deg;C. The facility remains operational today.</p>
+
+<h3>Concentrating Systems Monograph (1977)</h3>
+<p><em>Theory and Calculation of Heliotechnical Concentrating Systems</em> (with R.A. Zakhidov and A.A. Vainer) provided the definitive mathematical treatment of solar concentrator optics, flux distribution, and thermal efficiency.</p>
+
+<h2>IV. Aquifer Thermal Energy Storage (ATES) &mdash; The 1971 Breakthrough</h2>
+
+<p>In 1971, Rabbimov, Umarov, and Zakhidov published "Storage of Solar Energy in a Sandy-Gravel Ground" in <em>Geliotekhnika</em>. This paper introduced the concept of using naturally occurring aquifers as long-term, seasonal reservoirs for thermal energy.</p>
+
+<blockquote>
+  "The initial studies of the possibility of storing hot water in aquifers were proposed in 1971. The early works were by Rabbimov, Umarov, and Zakhidov (1971)."<br>&mdash; LBL Workshop Proceedings (LBL-8431), Berkeley, 1978
+</blockquote>
+
+<p><strong>Key facts about this work:</strong></p>
+<ul>
+  <li>Gave the Soviet Union a two-year priority over comparable Western research (Meyer &amp; Todd, 1973)</li>
+  <li>Cited by Lawrence Berkeley National Laboratory as the "starting point" for the entire ATES field</li>
+  <li>Provided the analytic framework later validated by the DOE's CCC numerical model</li>
+  <li>Modern ATES systems in the Netherlands, Sweden, Germany, and the USA trace their theoretical validity to Umarov's boundary conditions</li>
+  <li>Recovery efficiencies exceeding 80%, as predicted by modern numerical models, owe their theoretical basis to his 1971 calculations</li>
+</ul>
+
+<h2>V. Agricultural Applications of Solar Energy</h2>
+
+<h3>Pulsed Concentrated Solar Radiation (PCSR)</h3>
+<p>Umarov pioneered the pre-sowing irradiation of seeds using intermittent pulses of concentrated sunlight. Results included:</p>
+
+<table>
+  <thead>
+    <tr><th>Crop</th><th>Effect</th><th>Improvement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cotton</td><td>Yield increase</td><td>8&ndash;15%</td></tr>
+    <tr><td>Potatoes</td><td>Yield increase</td><td>15&ndash;20%</td></tr>
+    <tr><td>Multiple crops</td><td>Accelerated ripening</td><td>3&ndash;6 days earlier</td></tr>
+    <tr><td>Chlorella algae</td><td>Growth acceleration</td><td>30% increase</td></tr>
+    <tr><td>Cotton seeds</td><td>Nucleic acid content</td><td>28&ndash;35% increase</td></tr>
+  </tbody>
+</table>
+
+<p>Indian researchers at CSMCRI Bhavnagar independently validated these results and published their findings in the <em>Journal of Scientific &amp; Industrial Research</em> (1999), calling PCSR "a boon for India."</p>
+
+<h3>Additional Agricultural Innovations</h3>
+<ul>
+  <li><strong>Ridge-profiled beds:</strong> Angling field furrows 30&ndash;35&deg; toward the south raised spring soil temperatures by 7&ndash;8&deg;C, enabling cotton sowing 10&ndash;15 days earlier</li>
+  <li><strong>Photo-destructive biodegradable mulch films:</strong> Prefigured modern biodegradable agricultural films</li>
+  <li><strong>Heated irrigation water (1988 patent):</strong> Siphoned naturally warm surface water from reservoirs, reducing vegetative periods</li>
+  <li><strong>Solar desalination:</strong> Provided fresh water for livestock in the Karakum Desert, expanding usable pastureland by 30&ndash;50%</li>
+  <li><strong>Solar greenhouses:</strong> Selective glass coated with tin dioxide; maintained temperatures without fuel boilers</li>
+  <li><strong>Solar pest control traps:</strong> Stored solar energy by day, attracted and eliminated insects at night</li>
+</ul>
+
+<h2>VI. Stirling Engine Research (1972&ndash;1978)</h2>
+
+<p>Umarov published eight papers on coupling Stirling engines with solar concentrators for autonomous power generation. This research anticipated modern dish-Stirling solar power systems by decades. Key contributions included heat exchanger optimization, regenerator efficiency analysis, thermodynamic parameter selection, and radiative heat discharge system design.</p>
+
+<h2>VII. Complete Known Publications</h2>
+
+<h3>Monographs &amp; Books</h3>
+<ol>
+  <li><strong>1970</strong> &mdash; "Beta-Spectrographs with Permanent Magnets" (with Abdurazzakov &amp; Gromov)</li>
+  <li><strong>1973</strong> &mdash; "Biruni, Copernicus, and Modern Science" (trans. "At the Crossroads of the Millennium," 2001)</li>
+  <li><strong>1974</strong> &mdash; "Solar Energy" (with A.A. Yershov)</li>
+  <li><strong>1976</strong> &mdash; "Use of Low-Potential Solar Installations"</li>
+  <li><strong>1977</strong> &mdash; "Theory and Calculation of Heliotechnical Concentrating Systems" (with Zakhidov &amp; Vainer)</li>
+</ol>
+
+<h3>Selected Scientific Articles (Chronological)</h3>
+<ol>
+  <li><strong>1971</strong> &mdash; "The optical characteristics of a solar pond" &mdash; <em>Applied Solar Energy</em></li>
+  <li><strong>1971</strong> &mdash; "Storage of Solar Energy in a Sandy-Gravel Ground" &mdash; <em>Geliotekhnika</em> (with Rabbimov &amp; Zakhidov)</li>
+  <li><strong>1972</strong> &mdash; "Influence of Heat Exchanger Inefficiency on the Efficiency and Power Characteristics of a Solar Powerplant Dynamic Converter"</li>
+  <li><strong>1972</strong> &mdash; "Dynamic Converter for Stirling Engines and Prospects for its Utilization in Autonomous Solar Power Plants"</li>
+  <li><strong>1972</strong> &mdash; "On temperature distribution in a solar-cooler generator and heat-conduction coefficient of adsorbent"</li>
+  <li><strong>1973</strong> &mdash; "Influence of Regenerator Efficiency on the Thermal Efficiency of a Stirling Engine Dynamic Energy Converter"</li>
+  <li><strong>1973</strong> &mdash; "Potential for Raising the Radiation Regime of Cotton Field"</li>
+  <li><strong>1974</strong> &mdash; "Temperature Distribution in Accumulation of Solar Energy in an Aquifer"</li>
+  <li><strong>1974</strong> &mdash; "Experimental Study of Aquifer Heating in Solar-Energy Accumulation"</li>
+  <li><strong>1974</strong> &mdash; "Prospects for Using Dynamic Thermocompression Converter in Solar Power Plants"</li>
+  <li><strong>1976</strong> &mdash; "Method of Optimizing Heat Exchangers for a Stirling Engine"</li>
+  <li><strong>1976</strong> &mdash; "Thermodynamic Analysis and Selection of Optimal Parameters of a Dynamic Converter for a Solar Energy Set-Up Utilizing Stirling Engine"</li>
+  <li><strong>1976</strong> &mdash; "Long Focus Solar Installation for the Illumination of Seeds" (with Alimov &amp; Alavutdinov)</li>
+  <li><strong>1976</strong> &mdash; "Pre-sowing Irradiation of Cotton Seed by Pulsed Concentrated Solar Radiation"</li>
+  <li><strong>1977</strong> &mdash; "Some Results of an Experimental Investigation of a Stirling Engine"</li>
+  <li><strong>1977</strong> &mdash; "Effect of Base Doping on the Electrical and Photo-electric Properties of the Thin-Film Cu2S-CdS Heterojunction"</li>
+  <li><strong>1977</strong> &mdash; "Temperature Field in Protective Soil With Heating Layers"</li>
+  <li><strong>1977</strong> &mdash; "Determining Soil Surface Temperature Oscillation Amplitude and Amount of Solar Heat Accumulated in Unheated Protected Ground"</li>
+  <li><strong>1978</strong> &mdash; "Optimization and Design of Radiative Heat Discharge System for Energy Unit With Stirling Engine"</li>
+  <li><strong>1979</strong> &mdash; "Methods of Increasing Cotton Yield by Using Concentrated Pulsed Light"</li>
+  <li><strong>1984</strong> &mdash; "Investigation of Possibilities of Fabricating Lightweight Thin Light-Focusing Mirrors"</li>
+  <li><strong>1988</strong> &mdash; "Unit for Pulsed Irradiation" (with Alimov, Alavutdinov &amp; Kamak'dinov)</li>
+</ol>
+
+<h3>Third-Party Publications Referencing Umarov's Work</h3>
+<ol>
+  <li><strong>1978</strong> &mdash; <em>Proceedings of the Thermal Energy Storage in Aquifers Workshop</em> (LBL-8431), Lawrence Berkeley National Laboratory. Chaired by Chin Fu Tsang.</li>
+  <li><strong>1980</strong> &mdash; Asil'bekova et al., "Effect of the irradiation of cotton seeds with pulses of concentrated light on the composition of the cottonseed oil." <em>Chemistry of Natural Compounds</em>, 16(6), pp. 550&ndash;553.</li>
+  <li><strong>1981</strong> &mdash; Ya.B. Zeldovich &amp; M.Yu. Khlopov, paper on neutrino mass cosmological implications. Cites Umarov's 1949 work alongside 13 Nobel laureates.</li>
+  <li><strong>1999</strong> &mdash; S.D. Gomkale &amp; S.T. Zodape, "Effect of Pulsed Concentrated Solar Radiation on Seeds and Plants." <em>Journal of Scientific &amp; Industrial Research</em>, Vol. 58, pp. 11&ndash;13.</li>
+  <li><strong>N/A</strong> &mdash; U.S. Military Technical Report ADA357675. References Umarov as a key figure in energy technology research.</li>
+</ol>
+
+<div class="section-divider"></div>
+
+<h2>VIII. Assessment: A Polymath Who Built Institutions</h2>
+
+<p>What makes Giyas Yakubovich Umarov exceptional is not merely the breadth of his contributions but their <em>interconnection</em>. The mathematical rigor he developed in nuclear spectroscopy directly transferred to his thermal modeling of aquifers. His understanding of particle physics informed his work on photon-driven biological stimulation. And his institutional vision&mdash;founding journals, supervising 54 dissertations, securing 31 patents&mdash;created a self-sustaining ecosystem of research that outlived him.</p>
+
+<p>U.S. Professor David Albert of Drexel University assessed that Umarov's research was <strong>50&ndash;60 years ahead of its time</strong>. The concepts he articulated in the early 1970s&mdash;seasonal underground thermal storage, solar-mechanical power conversion, pulsed light agricultural stimulation&mdash;are today active research frontiers and commercial technologies.</p>
+
+<p>He was a man who debated Lev Landau and was proven right, who proposed tower-type solar plants decades before they existed, who saw the Earth itself as a planetary thermal battery, and who used concentrated sunlight to make cotton grow faster. He was, in the most precise sense, a scientific architect: a man who built not just theories but the institutions, instruments, and human capital that turned theories into reality.</p>
+
+<blockquote>
+  "The key to solving global problems is sometimes hidden in the archives of the past, in the formulas of people who saw in the ordinary earth beneath their feet the potential of an entire star."
+</blockquote>
+
+<div class="footer-note">
+  <p>Compiled for the Umarov family &bull; Based on primary source documents, institutional records, and published references</p>
+  <p style="margin-top:0.5rem">Memorial Archive of Academician Giyas Yakubovich Umarov (1921&ndash;1988)</p>
+</div>
+
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>
